@@ -1,12 +1,12 @@
 # SlimCord
 
-**Current version:** 0.1.2
+**Current version:** 0.1.3
 
-Reduces Discord's CPU and memory usage with targeted optimizations for a smaller footprint — without sacrificing functionality.
+Targeted optimizations that aim to cut Discord's CPU and memory usage for a smaller footprint — without sacrificing functionality.
 
 ## Goals
 
-Discord can be heavy: high CPU usage during normal interaction, growing memory footprint over long sessions, and general sluggishness. SlimCord tackles these with surgical optimizations that cut wasted work while preserving every feature you actually use. The aim is a leaner, snappier Discord — not a stripped-down one.
+Discord can be heavy: high CPU usage during normal interaction, growing memory footprint over long sessions, and general sluggishness. SlimCord sets out to tackle these with surgical optimizations that cut wasted work while preserving every feature you actually use. The aim is a leaner, snappier Discord — not a stripped-down one.
 
 There are no per-optimization settings: enabling SlimCord applies all of its optimizations together. Each one is a precise webpack patch applied at load time, so there's no background polling or runtime overhead from SlimCord itself.
 

@@ -1,5 +1,10 @@
 # SlimCord Changelog
 
+## 0.1.3 — 2026-11-17
+- Reworded the plugin description (`index.tsx` `description` and the README tagline) so it states CPU and memory reduction as a goal, not a result: "Targeted optimizations that aim to cut Discord's CPU and memory usage for a smaller footprint, without sacrificing functionality." The one shipped patch (the hover setState guard) mainly saves CPU by skipping redundant re-renders; memory savings aren't shipped yet
+- README "Goals": "SlimCord tackles these" → "SlimCord sets out to tackle these", for the same reason (the list it refers to includes the growing memory footprint)
+- No code or patch changes; the hover setState guard is unchanged
+
 ## 0.1.2 — 2026-11-17
 - Fixed a TypeScript type error at `index.tsx:13`: `"Performance"` isn't one of Vencord's allowed plugin tags (`PluginTags` in `src/utils/types.ts`). Removed it; SlimCord keeps the `"Utility"` tag
 - Added `searchTerms: ["performance", "optimization"]` so searching "performance" in Vencord's plugin list still finds SlimCord. The v0.1.1 description no longer contains that word, and tags are never searched (they only feed the tag filter dropdown)

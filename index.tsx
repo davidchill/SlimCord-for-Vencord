@@ -8,7 +8,7 @@ import definePlugin from "@utils/types";
 
 export default definePlugin({
     name: "SlimCord",
-    description: "Reduces Discord's CPU and memory usage with targeted optimizations for a smaller footprint, without sacrificing functionality.",
+    description: "Targeted optimizations that aim to cut Discord's CPU and memory usage for a smaller footprint, without sacrificing functionality.",
     authors: [{ name: "David Rodriguez", id: 0n }],
     tags: ["Utility"],
     searchTerms: ["performance", "optimization"],
