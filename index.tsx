@@ -10,7 +10,8 @@ export default definePlugin({
     name: "SlimCord",
     description: "Reduces Discord's CPU and memory usage with targeted optimizations for a smaller footprint, without sacrificing functionality.",
     authors: [{ name: "David Rodriguez", id: 0n }],
-    tags: ["Performance", "Utility"],
+    tags: ["Utility"],
+    searchTerms: ["performance", "optimization"],
 
     patches: [
         {

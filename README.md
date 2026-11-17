@@ -1,6 +1,6 @@
 # SlimCord
 
-**Current version:** 0.1.1
+**Current version:** 0.1.2
 
 Reduces Discord's CPU and memory usage with targeted optimizations for a smaller footprint — without sacrificing functionality.
 
