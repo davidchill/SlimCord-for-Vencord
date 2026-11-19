@@ -13,24 +13,9 @@ export default definePlugin({
     tags: ["Utility"],
     searchTerms: ["performance", "optimization"],
 
-    patches: [
-        {
-            // Discord's useHover hook fires setState on every pointerover event,
-            // even when hover state is unchanged. Guard the calls so setState only
-            // runs when the boolean value actually changes.
-            find: '"hoverstart"',
-            replacement: [
-                {
-                    match: /n&&n\(!0\),_\(!0\)/,
-                    replace: "n&&n(!0),d||_(!0)"
-                },
-                {
-                    match: /n&&n\(!1\),_\(!1\)/,
-                    replace: "n&&n(!1),d&&_(!1)"
-                }
-            ]
-        }
-    ],
+    // No active patches. The hover setState guard (find '"hoverstart"') was retired in
+    // v0.1.4: Discord's useHover (React Aria) already skips setState unless hover really
+    // changes, and the guard read stale state inside a useMemo. See CHANGELOG 0.1.4.
 
     start() {},
     stop() {},
